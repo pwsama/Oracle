@@ -1,4 +1,4 @@
-#实验2
+﻿#实验2
 ## 实验目的：
 
 掌握用户管理、角色管理、权根维护与分配的能力，掌握用户之间共享对象的操作技能。
@@ -29,6 +29,7 @@ SQL> GRANT con_res_view TO new_user;
 Grant succeeded.
 SQL> exit
 ```
+
 > 语句“ALTER USER new_user QUOTA 50M ON users;”是指授权new_user用户访问users表空间，空间限额是50M。
 
 - 第2步：新用户new_user连接到pdborcl，创建表mytable和视图myview，插入数据，最后将myview的SELECT对象权限授予hr用户。
@@ -54,6 +55,7 @@ SQL> GRANT SELECT ON myview TO hr;
 Grant succeeded.
 SQL>exit
 ```
+
 
 - 第3步：用户hr连接到pdborcl，查询new_user授予它的视图myview
 
