@@ -1,6 +1,6 @@
-#实验5
-##用户名：jack76
-1创建程序包：
+# 实验5
+## 用户名：jack76
+1 创建程序包：
 ```sql
 create or replace PACKAGE MyPack IS
   FUNCTION Get_SaleAmount(V_DEPARTMENT_ID NUMBER) RETURN NUMBER;
@@ -38,13 +38,13 @@ create or replace PACKAGE BODY MyPack IS
     END;
 END MyPack;
 ```
-如图所示：![图片](./1.png)
+如图所示： ![图片](./1.png)
 
 2测试SaleAmount函数
 ```sql
 select MyPack.SaleAmount(1) AS 部门1应收金额,MyPack.SaleAmount(11) AS 部门11应收金额 from dual;
 ```
-如图所示：![图片](./2.png)
+如图所示： ![图片](./2.png)
 3测试Employees函数
 ```sql
 set serveroutput on
